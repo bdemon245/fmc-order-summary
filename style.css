@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: hsl(225, 100%, 94%);
+}
+picture{
+    position: absolute;
+    z-index: -2;
+}
+.container{
+    min-height: 100vh;
+    max-width: 100vw;
+    background: url(src/images/pattern-background-desktop.svg) no-repeat;
+    display: grid;
+    place-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+    height: auto;
+}
+.hero{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+.card>div{
+    background: white;
+    margin-top: -5px;
+    border-radius: 0 0 20px 20px;
+    padding: 7.5%;
+}
+h1,p,h2,a{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+p{
+    color:hsl(224, 23%, 55%); 
+    margin-bottom: 10%; 
+}
+h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+h2{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+}
+.plan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.plan img{
+    height: auto;
+    max-width: 15%; 
+}
+.price>p, .cta>p, .cancel-btn{
+    margin-bottom: 0;
+}
+.cta{
+    background: hsl(245, 75%, 52%);
+    padding: 5%;
+    border-radius: .8em;
+    margin: 7.5% 0 5%;
+    transition: background 500ms;
+}
+.cta:hover{
+    background: hsl(245, 85%, 41%);
+}
+.cta>p{
+    color: white;
+    font-weight: 700;
+}
+.cancel-btn{
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+@media screen and (max-width:375px){
+    .container{
+        background: url(src/images/pattern-background-mobile.svg) no-repeat;
+    }
+}
+@media screen and (min-width:1441px){
+    .container{
+        background: url(src/images/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+    }
+    .card{
+        max-width: 25em;
+    }
+
+}
+@media screen and (max-width:320px) {
+    .card{
+        max-width: 17em;
+    }
+}
+

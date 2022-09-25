@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Frontend mentor Challenge order summary component">
     <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Order Summary Frontend Mentor</title>
 </head>
 <body>
-    
+    <div class="container">
+    <main aria-label="Order Summery Card">
+        <div class="card">
+            <section aria-label="hero"><img class="hero" src="src/images/illustration-hero.svg" alt="Hero Image"></section>
+            <div>
+                <article aria-label="Order Summary">
+                    <h1>Order Summary</h1>
+                    <p>You can now listen to millions of songs, audiobooks, and podcasts on <wbr> any 
+                        device anywhere you like!</p>
+                </article>
+                <section aria-label="Purchase Plan" class="plan">
+                    <img src="src/images/icon-music.svg" alt="Music Icon">
+                    <div class="price">
+                        <h2>Annual Plan</h2>
+                        <p>$59.99/year</p>
+                    </div>
+                    <a href="#">Change</a>
+                </section>
+                <section>
+                    <div class="cta">
+                       <p>Proceed to Payment</p> 
+                </div>
+                    <p class="cancel-btn">Cancel Order</p>
+                </section>
+            </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>
