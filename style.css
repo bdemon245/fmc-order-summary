@@ -20,7 +20,7 @@ picture{
 .card{
     display: flex;
     flex-direction: column;
-    max-width: 16em;
+    max-width: 20em;
     height: auto;
 }
 .hero{
@@ -29,11 +29,12 @@ picture{
     border-radius: 20px 20px 0 0;
     margin: 0;
 }
-.card>div{
+.content{
     background: white;
     margin-top: -5px;
     border-radius: 0 0 20px 20px;
-    padding: 7.5%;
+    padding: 10%;
+    padding-top: 0;
 }
 h1,p,h2,a{
     font-family: 'Red Hat Display', sans-serif;
@@ -41,12 +42,13 @@ h1,p,h2,a{
 }
 p{
     color:hsl(224, 23%, 55%); 
-    margin-bottom: 10%; 
+    margin-bottom:20px; 
 }
 h1{
     color: hsl(223, 47%, 23%);
     font-weight: 900;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 h2{
     font-weight: 700;
@@ -57,35 +59,40 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
     background: hsl(225, 100%, 98%);
-    padding: 5%;
+    padding: 10px;
     border-radius: 10px;
 }
 .plan img{
     height: auto;
     max-width: 15%; 
 }
-.price>p, .cta>p, .cancel-btn{
+.price>p, .cta, .cancel-btn{
     margin-bottom: 0;
 }
+    .plan>img{
+        margin-right: 7%;
+    }
+    .plan>a{
+        margin-left: auto;
+    }
 .cta{
     background: hsl(245, 75%, 52%);
     padding: 5%;
     border-radius: .8em;
-    margin: 7.5% 0 5%;
+    margin: 10px 0;
     transition: background 500ms;
 }
 .cta:hover{
     background: hsl(245, 85%, 41%);
 }
-.cta>p{
+.cta{
     color: white;
     font-weight: 700;
 }
 .cancel-btn{
     font-weight: 700;
-    margin-bottom: 5%;
 }
 @media screen and (max-width:375px){
     .container{
@@ -93,15 +100,9 @@ h2{
     }
 }
 @media screen and (min-width:500px){
-  .plan{
-        justify-content: flex-start;
-    }
-    .plan>img{
-        margin-right: 5%;
-    }
-    .plan>a{
-        margin-left: auto;
-    }
+  .card{
+    max-width: 24rem;
+  }
 }
 @media screen and (min-width:1441px){
     .container{
